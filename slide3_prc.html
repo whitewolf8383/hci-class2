@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Basics of ScrewBall</title>
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    .btn{
+      font-size: 2vw;
+      width: 10vw;
+      height: 10vw;
+      border-radius: 100%;
+    }
+
+    .slide2_prc{
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="head">
+    <h1 class="header">VARIABLES AND CONSTANTS PRACTICE</h1>
+    <h3 class="slide">Slide: 6</h3>
+
+    <button type="button" name="Backward" onclick="window.location.href = 'slide3.html';" class="lt-btn"><i class="arrow left"></i></button>
+    <button type="button" name="Forward" onclick="window.location.href = 'slide3_test.html';" class="rt-btn"><i class="arrow right"></i></button>
+
+  </section>
+
+  <section class="lecture">
+    <div class="ex-div" style="text-align: left; font-size: 3vw;">
+      <p style="padding-left: 10vw;">Write the following into the text box below</p>
+      <p style="padding-left: 10vw;">--x = 21#</p>
+      <p style="padding-left: 10vw; font-size: 1.75vw;">Hint: make sure there are spaces and a #.</p>
+      <form class="slide2_prc" action="" method="post">
+        <textarea id="textbox" style="height: 25vh; width: 70vw;" type="textarea" name="slide2_prc_text" value=""></textarea> <br> <br>
+        <input style="margin-right: 5vw; background-color: green;" onclick="testBox()" class="btn" type="submit" name="slide2_prc_text_submit" value="Submit" >
+        <input style="background-color: red;" class="btn" type="reset">
+      </form>
+    </div>
+  </section>
+
+  <script type="text/javascript">
+    function testBox(){
+      var x = document.getElementById("textbox").value;
+      var y = "Great Job!! Please continue to next page.";
+      var z = "Incorrect input. Please try again.";
+      var c = "--x = 21#";
+
+      if(x == c){
+        alert(y);
+      }
+      else{
+        alert(z);
+      }
+
+    }
+  </script>
+
+</body>
+
+</html>

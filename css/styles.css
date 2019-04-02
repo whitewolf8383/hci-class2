@@ -1,0 +1,265 @@
+/* styles sheet for CS464 project */
+/* Standard */
+body {
+  background-image: url(pp_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.header {
+  font-size: 1.7rem;
+}
+
+.slide {
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 20px;
+}
+
+.tb {
+  display: inline-block;
+  position: relative;
+  bottom: 35px;
+}
+
+i {
+  background-color: transparent;
+  border: solid black;
+  border-width: 0 8px 8px 0;
+  display: inline-block;
+  padding: 15px;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.left:hover {
+  animation: shake 1.75s cubic-bezier(.36, .07, .19, .97) both;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate(-2px) rotate(135deg);
+  }
+
+  20%, 80% {
+    transform: translate(3px) rotate(135deg);
+  }
+
+  30%, 50%, 70% {
+    transform: translate(-4px) rotate(135deg);
+  }
+
+  40%, 60% {
+    transform: translate(4px) rotate(135deg);
+  }
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.right:hover {
+  animation: shake2 1.75s cubic-bezier(.36, .07, .19, .97) both;
+}
+
+@keyframes shake2 {
+  10%, 90% {
+    transform: translate(-2px) rotate(-45deg);
+  }
+
+  20%, 80% {
+    transform: translate(3px) rotate(-45deg);
+  }
+
+  30%, 50%, 70% {
+    transform: translate(-4px) rotate(-45deg);
+  }
+
+  40%, 60% {
+    transform: translate(4px) rotate(-45deg);
+  }
+}
+
+.example-h4 {
+  font-size: 1.5rem;
+}
+
+.input-try {
+  width: 80%;
+  height: 200px;
+}
+
+.ex-div {
+  display: inline-block;
+  font-size: 1.1rem;
+  position: relative;
+  text-align: center;
+  width: 90%;
+}
+
+.ex-p {
+  text-align: justify;
+}
+
+.input-h4 {
+  font-size: 1.3rem;
+}
+
+
+/*Mobile build */
+@media screen and (max-width: 700px) {
+
+  /*and (orientation: landscape)*/
+  .lt-btn {
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    position: absolute;
+    top: 18%;
+    left: 5%;
+  }
+
+  .rt-btn {
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    position: absolute;
+    top: 18%;
+    right: 5%;
+  }
+
+  .res-box{
+    border: solid;
+    display: inline-block;
+    padding-left: 3px;
+    padding-right: 3px;
+    position: absolute;
+    top: 12%;
+    right: 5%;
+  }
+}
+
+
+/* Tablet build */
+@media screen and (min-width: 651px) and (max-width: 1000px) {
+
+  .header {
+    font-size: 2rem;
+  }
+
+  .slide {
+    font-size: 1.5rem;
+    position: relative;
+    bottom: 20px;
+  }
+
+  .lt-btn {
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+  }
+
+  .rt-btn {
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+  }
+
+  i {
+    background-color: transparent;
+    border: solid black;
+    border-width: 0 12px 12px 0;
+    display: inline-block;
+    padding: 30px;
+  }
+
+  .example-h4 {
+    font-size: 1.5rem;
+  }
+
+  .res-box{
+    border: solid;
+    display: inline-block;
+    padding-left: 3px;
+    padding-right: 3px;
+    position: absolute;
+    top: 12%;
+    right: 5%;
+  }
+}
+
+/* laptop build */
+@media screen and (min-width: 1001px) {
+
+  .header {
+    font-size: 2.4rem;
+  }
+
+  .slide {
+    font-size: 2rem;
+    position: relative;
+    bottom: 20px;
+  }
+
+  .lt-btn {
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    position: absolute;
+    top: 225px;
+    left: 5%;
+  }
+
+  .rt-btn {
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    position: absolute;
+    top: 225px;
+    right: 5%;
+  }
+
+  .res-box{
+    border: solid;
+    display: inline-block;
+    padding-left: 3px;
+    padding-right: 3px;
+    position: absolute;
+    top: 180px;
+    right: 5%;
+  }
+
+  i {
+    background-color: transparent;
+    border: solid black;
+    border-width: 0 16px 16px 0;
+    display: inline-block;
+    padding: 30px;
+  }
+
+  .ex-div {
+    display: inline-block;
+    font-size: 1.2rem;
+    position: relative;
+    text-align: center;
+    width: 70%;
+  }
+
+  .input-try {
+    width: 60%;
+    height: 200px;
+  }
+}
